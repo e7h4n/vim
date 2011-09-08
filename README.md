@@ -71,7 +71,6 @@
     * 设置了过滤 pyc 文件
 * fencview
 * Command-T
-* vim-coffee-script
 * vim-markdown
 * snipmate
 * jslint
@@ -84,6 +83,8 @@
 * jsbeautify
     * JavaScript 代码格式化，快捷键是 <code>&lt;Leader&gt;ff</code>
 * genutils
+* Scrath
+    * 打开一个临时的缓冲区随便记录东西，快捷键是 <code>&lt;Leader&gt;S</code>
 
 ## 插件升级
 
