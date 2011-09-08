@@ -54,3 +54,5 @@ nmap <F8> :cnext<CR>
 nmap <F9> :call handy#ToggleSnipple()<CR>
 
 imap ii <Esc>
+
+nmap <Leader>S :Scratch<cr>
