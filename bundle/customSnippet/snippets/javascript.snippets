@@ -1,0 +1,51 @@
+snippet def
+	define(function(require, exports) {
+		${1}
+	});
+snippet req
+	var ${1:} = require('${2}');
+snippet for for length
+	for (var i=0, l=${1:SomeThing}.length; i<l; i++) {
+		var ${2:item} = $1[i];${3}
+	}
+snippet bb
+	var Backbone = require('../lib/backbone');
+snippet us
+	var _ = require('../lib/underscore');
+snippet ma
+	var mustache = require('../lib/mustache');
+snippet dbc
+	var DbC = require('../util/DbC');
+snippet hr
+	/* -------------------- ${1} ----------------------- */
+snippet el
+	/* -------------------- Event Listener ----------------------- */
+snippet bo
+	/* -------------------- Backbone Options ----------------------- */
+snippet lends
+	/** @lends ${1}.prototype */
+snippet desc
+	describe('EditorView', function () {
+		${1}
+	});
+snippet it
+	it('${1}', function () {
+		var editor = null;
+		waitsFor(function () {
+			editor = eWindow.editor;
+			return editor !== undefined;
+		}, 'Editor initialize failed', 10000);
+		${2}
+	});
+snippet runs
+	runs(function () {
+		${1}
+	});
+snippet l
+	console.log(${1});
+snippet tmpldoc
+	/**
+	 * 模板函数
+	 * @function
+	 * @param {Object} [templateData]
+	 */
