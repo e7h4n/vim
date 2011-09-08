@@ -4,3 +4,6 @@ install:
 	git submodule init
 	git submodule update
 	[[ ! -e '~/.vimundodir' ]] || mkdir ~/.vimundodir
+
+update:
+	git submodule foreach 'git checkout master && git pull'
