@@ -46,6 +46,9 @@ set ambiwidth=double
 " 即时搜索
 set incsearch
 
+" 永远显示状态栏
+set laststatus=2
+
 " undo dir
 if v:version >= 703
   set undodir=$HOME/.vimundodir
