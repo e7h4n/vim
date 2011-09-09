@@ -12,6 +12,7 @@ set backspace=indent,eol,start
 set ruler
 " 编码设置
 set fileencodings=ucs-bom,utf-8,gbk
+set fileformats=unix,dos,mac
 
 " 缩进设置
 set smarttab
