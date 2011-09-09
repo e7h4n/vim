@@ -7,3 +7,6 @@ install:
 
 update:
 	git submodule foreach 'git checkout master && git pull'
+
+command-t:
+	cd bundle/Command-T/ruby/command-t && ruby extconf.rb && make
