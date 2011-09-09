@@ -4,9 +4,6 @@
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
 	url = git://github.com/tpope/vim-surround.git
-[submodule "bundle/mru"]
-	path = bundle/mru
-	url = git://github.com/vim-scripts/mru.vim.git
 [submodule "bundle/desertEx"]
 	path = bundle/desertEx
 	url = git://github.com/vim-scripts/desertEx.git
