@@ -71,6 +71,7 @@
     * 设置了过滤 pyc 文件
 * fencview
 * Command-T
+    * 需要 Ruby 支持。在 .vim 目录下通过 <code>make command-t</code> 安装
 * vim-markdown
 * snipmate
 * jslint
