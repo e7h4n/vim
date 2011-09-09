@@ -18,21 +18,19 @@
 
 ## 配置修改
 
-大部分的自定义修改都在 <code>bundle/vimrc</code> 这个 bundle 里面
+大部分的自定义修改都在 <code>bundle/Config</code> 这个 bundle 里面
 
-* Vim 本身配置修改一般在 <code>bundle/vimrc/plugin/config.vm</code>
-* 快捷键修改一般在 <code>bundle/vimrc/plugin/shortcut.vim</code>
-* 对插件的配置会在 <code>bundle/vimrc/plugin/插件名.vim</code>
+* Vim 本身配置修改一般在 <code>bundle/Config/plugin/config.vm</code>
+* 快捷键修改一般在 <code>bundle/Config/plugin/shortcut.vim</code>
+* 对插件的配置会在 <code>bundle/Config/plugin/插件名.vim</code>
 
 ### 自定义快捷键
 
-大部分自定义快捷键都在 <code>bundle/vimrc/plugin/shortcut.vim</code> 中配置，<code>&lt;Leader&gt;</code> 键被映射为 <code>\\</code>
+大部分自定义快捷键都在 <code>bundle/Config/plugin/shortcut.vim</code> 中配置，<code>&lt;Leader&gt;</code> 键被映射为 <code>\\</code>
 
 * Normal 模式
     * <code>P</code>: 粘贴最近一次 yank 操作的文字 (比如 yy 之后又 dd 了，可以用 P 来粘贴 yy 的结果)
     * <code><up></code>/<code><down></code>: 在分屏模式下放大 / 缩小当前窗口
-    * <code><space></code>: 打开 BufExplorer (<space>j<cr> 即可快速跳转到上一个编辑的文件)
-    * <code>&lt;Leader&gt;<space></code>: 打开 Command-T 的 Buffer 列表 (不太常用)
     * <code>&lt;Leader&gt;nt</code>: 打开 NerdTree
     * <code>&lt;Leader&gt;nf</code> :打开 NerdTree 并且将光标跳转到现在编辑的文件 (nt 的意思是 Nerdtree Find)
     * <code>&lt;Leader&gt;m</code>: 调用系统 make
@@ -43,7 +41,6 @@
     * <code>&lt;F7&gt;</code>/<code>&lt;F8&gt;</code>: 跳到上一条/下一条 quickfix 记录，配合 <code>&lt;F3&gt;</code> 可以在搜索结果中快速跳转
     * <code>&lt;F9&gt;</code>: 快速编辑 Snippet，在 Snippet 中按 <code>&lt;F9&gt;</code> 会保存当前 Snippet，刷新 snipMate 缓存并返回刚刚编辑的文件
     * <code>&lt;F10&gt;</code>: 打开 TagBar
-    * <code>&lt;F12&gt;</code>: 打开 MRU
     * <code>&lt;Ctrl&gt;-l</code>: 清除高亮并且重绘屏幕
     * <code>&lt;Ctrl&gt;-_</code>: 分屏模式下当前窗口最大化
 * CommandLine 模式
@@ -51,6 +48,8 @@
     * <code>&lt;Ctrl&gt;-e</code>: 跳到命令行结束
 * Insert 模式
     * ii: <code>&lt;Esc&gt;</code>
+* FuzzyFinder
+    * 参考插件列表中 FuzzyFinder 的介绍
 
 ## 插件
 
@@ -58,34 +57,36 @@
 
 插件介绍请 Google
 
-* nerdcommenter
-* vim-surround
-* mru
-* desertEx
-* CmdlineComplete
-* bufexplorer
+* FuzzyFinder
+    * 强大的文件查找工具 (替换了 Command-T 以及 MRU)，主要快捷键映射有
+    * <code>&lt;space&gt;</code> 搜索 Buffer (以前的版本中这个快捷键是 BufExplorer)
+    * <code>&lt;t&gt;</code> 搜索文件 (以前的版本中这个快捷键是 Command-T)
+    * <code>&lt;Ctrl-]&gt;</code> 搜索当前光标所在单词的 Tag (覆盖了 Vim 原先的 tag 跳转)
+    * <code>&lt;F12&gt;</code> 在最近打开的文件中搜索 (以前版本中这个快捷键是 MRU)
+    * <code>&lt;Leader&gt;-t</code> 搜索 tag
+    * <code>&lt;Leader&gt;-c</code> 在当前文件所在目录中搜索文件
+    * <code>&lt;Leader&gt;-d</code> 搜索文件夹
+* nerdcommenter 快速给代码加注释
+* vim-surround 修改一段代码周围的引号、括号等
+* CmdlineComplete 给命令行提供补全功能
+* bufexplorer 提供 Buffer 列表
 * zencoding-vim
     * 快捷键是 <code>&lt;Ctrl&gt;-k</code>
-* vimwiki
-* nerdtree
+* nerdtree 查看目录树
     * 设置了过滤 pyc 文件
-* fencview
-* Command-T
-    * 需要 Ruby 支持。在 .vim 目录下通过 <code>make command-t</code> 安装
-* vim-markdown
-* snipmate
-* jslint
-* tagbar
-* Gist
-* molokai
-* vim-repeat
-* web-indent
-    * JavaScript 的语法缩进
-* jsbeautify
-    * JavaScript 代码格式化，快捷键是 <code>&lt;Leader&gt;ff</code>
-* genutils
-* Scrath
-    * 打开一个临时的缓冲区随便记录东西，快捷键是 <code>&lt;Leader&gt;S</code>
+* fencview 增强 vim 的编码检测
+* vim-markdown 高亮 markdown 格式
+* snipmate 代码补全
+* jslint js 语法校验
+* tagbar js 代码大纲视图
+* Gist 分享代码到 github 的小工具
+* vim-repeat 增强 vim 的 repeat 功能
+* web-indent JavaScript 的语法缩进
+* jsbeautify JavaScript 代码格式化，快捷键是 <code>&lt;Leader&gt;ff</code>
+* Scrath 打开一个临时的缓冲区随便记录东西，快捷键是 <code>&lt;Leader&gt;S</code>
+* genutils 给 vim 添加一些函数库
+* molokai 配色
+* desertEx 配色
 
 ## 插件升级
 

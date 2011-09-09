@@ -2,9 +2,14 @@
 nmap <silent> <Leader>nt :NERDTreeToggle<CR>
 nmap <silent> <Leader>nf :NERDTreeFind<CR>
 
-" Buffer Explorer捷键
-map <silent> <Space> :BufExplorer<CR>
-map <silent> <Leader><Space> :CommandTBuffer<CR>
+" FuzzyFinder
+nmap <silent> <Space> :FufBuffer<CR>
+nmap <silent> <Leader>t :FufCoverageFile<CR>
+nmap <silent> <C-]> :FufTagWithCursorWord!<CR>
+nmap <silent> <F12> :FufMruFile<cr>
+nmap <silent> <Leader>fd :FufDir<cr>
+nmap <silent> <Leader>fc :FufDirWithCurrentBufferDir<cr>
+nmap <silent> <Leader>ft :FufTag<cr>
 
 " 使用上下来调节窗口大小
 nmap <silent> <UP> <C-W>+:let t:flwwinlayout = winrestcmd()<CR>
@@ -37,8 +42,6 @@ nmap <silent> <F5> :set invnu<CR>
 " 目录中查找内容
 nmap <F3> :call handy#SearchWord()<CR>
 
-" 打开 MRU
-map <F12> :MRU<cr>
 
 " ^L 刷新
 nnoremap <silent><C-L> :nohlsearch<CR><C-L>
