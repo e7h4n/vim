@@ -4,9 +4,7 @@ install:
 	git submodule init
 	git submodule update
 	[[ ! -e '~/.vimundodir' ]] || mkdir ~/.vimundodir
+	[[ ! -e '~/.vim-fuf-data' ]] || makedir ~/.vim-fuf-data
 
 update:
 	git submodule foreach 'git checkout master && git pull'
-
-command-t:
-	cd bundle/Command-T/ruby/command-t && ruby extconf.rb && make
