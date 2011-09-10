@@ -56,8 +56,10 @@ nmap <F8> :cnext<CR>
 " 编辑 snippet
 nmap <F9> :call handy#ToggleSnipple()<CR>
 
+" 更方便的 <Esc>
 imap ii <Esc>
 
+" 打开一个临时的缓冲区随便记东西
 nmap <Leader>S :Scratch<cr>
 
 " 交换 0 和 ^
@@ -71,3 +73,6 @@ nnoremap s0 s^
 nnoremap s^ s0
 nnoremap y0 y^
 nnoremap y^ y0
+
+" 更方便的保存文件
+nmap <leader> :w!<cr>
