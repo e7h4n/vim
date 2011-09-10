@@ -64,3 +64,6 @@
 [submodule "bundle/vim-l9"]
 	path = bundle/vim-l9
 	url = git://github.com/slack/vim-l9.git
+[submodule "bundle/vim-easymotion"]
+	path = bundle/vim-easymotion
+	url = git://github.com/Lokaltog/vim-easymotion.git
