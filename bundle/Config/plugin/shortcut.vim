@@ -60,5 +60,14 @@ imap ii <Esc>
 
 nmap <Leader>S :Scratch<cr>
 
+" 交换 0 和 ^
 nnoremap 0 ^
 nnoremap ^ 0
+nnoremap d0 d^
+nnoremap d^ d0
+nnoremap c0 c^
+nnoremap c^ c0
+nnoremap s0 s^
+nnoremap s^ s0
+nnoremap y0 y^
+nnoremap y^ y0
