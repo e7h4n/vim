@@ -7,9 +7,6 @@ nmap <silent> <Space> :FufBuffer<CR>
 nmap <silent> <Leader>t :FufCoverageFile<CR>
 nmap <silent> <C-]> :FufTagWithCursorWord!<CR>
 nmap <silent> <F12> :FufMruFile<cr>
-nmap <silent> <Leader>fd :FufDir<cr>
-nmap <silent> <Leader>fc :FufDirWithCurrentBufferDir<cr>
-nmap <silent> <Leader>ft :FufTag<cr>
 
 " 使用上下来调节窗口大小
 nmap <silent> <UP> <C-W>+:let t:flwwinlayout = winrestcmd()<CR>
