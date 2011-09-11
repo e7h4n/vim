@@ -52,9 +52,6 @@
 [submodule "bundle/vim-pathogen"]
 	path = bundle/vim-pathogen
 	url = git://github.com/tpope/vim-pathogen.git
-[submodule "bundle/jsbeautify"]
-	path = bundle/jsbeautify
-	url = git://github.com/vim-scripts/jsbeautify.git
 [submodule "bundle/vim-scratch"]
 	path = bundle/vim-scratch
 	url = git://github.com/duff/vim-scratch.git
