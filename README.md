@@ -16,6 +16,17 @@
     cd .vim
     make install
 
+## 升级
+
+在 .vim 目录下执行以下命令
+
+    git pull
+
+如果需要升级插件，可以执行以下命令
+    
+    make update
+
+
 ## 配置修改
 
 大部分的自定义修改都在 <code>bundle/Config</code> 这个 bundle 里面
