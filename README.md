@@ -50,6 +50,8 @@
     * ii: <code>&lt;Esc&gt;</code>
 * FuzzyFinder
     * 参考插件列表中 FuzzyFinder 的介绍
+* easymotion
+    * 快速光标跳转
 
 ## 插件
 
@@ -60,12 +62,9 @@
 * FuzzyFinder
     * 强大的文件查找工具 (替换了 Command-T 以及 MRU)，主要快捷键映射有
     * <code>&lt;space&gt;</code> 搜索 Buffer (以前的版本中这个快捷键是 BufExplorer)
-    * <code>&lt;t&gt;</code> 搜索文件 (以前的版本中这个快捷键是 Command-T)
+    * <code>&lt;Leader&gt;&lt;Space&gt;</code> 搜索文件 (替换掉了 Command-T)
     * <code>&lt;Ctrl-]&gt;</code> 搜索当前光标所在单词的 Tag (覆盖了 Vim 原先的 tag 跳转)
     * <code>&lt;F12&gt;</code> 在最近打开的文件中搜索 (以前版本中这个快捷键是 MRU)
-    * <code>&lt;Leader&gt;-t</code> 搜索 tag
-    * <code>&lt;Leader&gt;-c</code> 在当前文件所在目录中搜索文件
-    * <code>&lt;Leader&gt;-d</code> 搜索文件夹
 * nerdcommenter 快速给代码加注释
 * vim-surround 修改一段代码周围的引号、括号等
 * CmdlineComplete 给命令行提供补全功能
