@@ -72,4 +72,4 @@ nnoremap y0 y^
 nnoremap y^ y0
 
 " 更方便的保存文件
-nmap <leader> :w!<cr>
+nmap <leader>u :w!<cr>
