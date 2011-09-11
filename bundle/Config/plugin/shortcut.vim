@@ -4,7 +4,7 @@ nmap <silent> <Leader>nf :NERDTreeFind<CR>
 
 " FuzzyFinder
 nmap <silent> <Space> :FufBuffer<CR>
-nmap <silent> <Leader>t :FufCoverageFile<CR>
+nmap <silent> <Leader><space> :FufCoverageFile<CR>
 nmap <silent> <C-]> :FufTagWithCursorWord!<CR>
 nmap <silent> <F12> :FufMruFile<cr>
 
@@ -70,6 +70,3 @@ nnoremap s0 s^
 nnoremap s^ s0
 nnoremap y0 y^
 nnoremap y^ y0
-
-" 更方便的保存文件
-nmap <leader>u :w!<cr>
