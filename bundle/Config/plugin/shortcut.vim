@@ -1,3 +1,6 @@
+" 保存文件
+nnoremap <silent> <C-m> :w<cr>
+
 " NERDTree快捷键 
 nmap <silent> <Leader>nt :NERDTreeToggle<CR>
 nmap <silent> <Leader>nf :NERDTreeFind<CR>
