@@ -56,4 +56,5 @@ if v:version >= 703
   set undofile
 endif
 
+" 打开文件时跳到上次编辑的位置
 autocmd BufReadPost * call handy#JumpToLatest()
