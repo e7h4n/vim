@@ -58,7 +58,7 @@
     * <code>&lt;Ctrl&gt;-a</code>: 跳到命令行开始
     * <code>&lt;Ctrl&gt;-e</code>: 跳到命令行结束
 * Insert 模式
-    * ii: <code>&lt;Esc&gt;</code>
+    * ii: 退出到 Norm 模式并保存文件
 * FuzzyFinder
     * 参考插件列表中 FuzzyFinder 的介绍
 * easymotion
