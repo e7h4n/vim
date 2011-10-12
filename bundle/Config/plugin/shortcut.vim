@@ -5,7 +5,6 @@ nmap <silent> <Leader>nf :NERDTreeFind<CR>
 " FuzzyFinder
 nmap <silent> <Space> :FufBuffer<CR>
 nmap <silent> <C-j> :FufCoverageFile<CR>
-nmap <silent> <C-]> :FufTagWithCursorWord!<CR>
 nmap <silent> <F12> :FufMruFile<cr>
 
 " 使用上下来调节窗口大小
