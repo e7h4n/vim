@@ -69,3 +69,6 @@ nnoremap s0 s^
 nnoremap s^ s0
 nnoremap y0 y^
 nnoremap y^ y0
+
+" 快速跳到下一个驼峰位置
+nmap t` /[A-Z]<cr>

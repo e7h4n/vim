@@ -54,6 +54,7 @@
     * <code>&lt;F10&gt;</code>: 打开 TagBar
     * <code>&lt;Ctrl&gt;-l</code>: 清除高亮并且重绘屏幕
     * <code>&lt;Ctrl&gt;-_</code>: 分屏模式下当前窗口最大化
+    * <code>t`</code>: 跳转到下一个大写字母 (驼峰式跳转)
 * CommandLine 模式
     * <code>&lt;Ctrl&gt;-a</code>: 跳到命令行开始
     * <code>&lt;Ctrl&gt;-e</code>: 跳到命令行结束
