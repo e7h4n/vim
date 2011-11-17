@@ -10,11 +10,19 @@
 
 ## 安装
 
+### *nix
+
 在 $HOME 目录下执行以下命令
 
     git clone git://github.com/perfectworks/vim.git ~/.vim
-    cd .vim
-    make install
+    cd ~/.vim && ./install.sh
+
+### Windows
+
+在 %HOME% 目录下执行
+
+    git clone git://github.com/perfectworks/vim.git %HOME%/.vim
+    cd %HOME%/.vim && install.bat
 
 ## 升级
 
@@ -22,9 +30,9 @@
 
     git pull
 
-如果需要升级插件，可以执行以下命令
-    
-    make update
+升级插件
+
+    git submodule foreach "git checkout master && git pull"
 
 
 ## 配置修改
@@ -97,12 +105,6 @@
 * genutils 给 vim 添加一些函数库
 * molokai 配色
 * desertEx 配色
-
-## 插件升级
-
-在 <code>.vim</code> 目录下执行
-
-    git submodule foreach 'git pull'
 
 ### 安装新插件
 
