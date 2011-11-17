@@ -1,6 +1,8 @@
 " 色彩主题
 colo molokai
-set t_Co=256 " 256 色
+if $TERM == "xterm-256color"
+    set t_Co=256 " 256 色
+endif
 
 " 关闭兼容模式
 set nocompatible
