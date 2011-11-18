@@ -70,8 +70,6 @@
     * ii: 退出到 Norm 模式并保存文件
 * FuzzyFinder
     * 参考插件列表中 FuzzyFinder 的介绍
-* easymotion
-    * 快速光标跳转
 
 ## 插件
 
