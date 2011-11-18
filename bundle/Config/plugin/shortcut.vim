@@ -72,3 +72,6 @@ nnoremap y^ y0
 
 " 快速跳到下一个驼峰位置
 nmap t` /[A-Z]<cr>
+
+" 更新 FuzzyFinder 的 cache
+nmap <silent> <leader>fr :FufRenewCache<cr>
