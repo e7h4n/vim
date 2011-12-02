@@ -48,7 +48,7 @@
 大部分自定义快捷键都在 <code>bundle/Config/plugin/shortcut.vim</code> 中配置，<code>&lt;Leader&gt;</code> 键被映射为 <code>\\</code>
 
 * Normal 模式
-    * <code>P</code>: 粘贴最近一次 yank 操作的文字 (比如 yy 之后又 dd 了，可以用 P 来粘贴 yy 的结果)
+    * <code>gp</code>: 粘贴最近一次 yank 操作的文字 (比如 yy 之后又 dd 了，可以用 gp 来粘贴 yy 的结果)
     * <code><up></code>/<code><down></code>: 在分屏模式下放大 / 缩小当前窗口
     * <code>&lt;Leader&gt;nt</code>: 打开 NerdTree
     * <code>&lt;Leader&gt;nf</code> :打开 NerdTree 并且将光标跳转到现在编辑的文件 (nt 的意思是 Nerdtree Find)

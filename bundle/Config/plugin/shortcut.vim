@@ -11,8 +11,9 @@ nmap <silent> <F12> :FufMruFile<cr>
 nmap <silent> <UP> <C-W>+:let t:flwwinlayout = winrestcmd()<CR>
 nmap <silent> <DOWN> <C-W>-:let t:flwwinlayout = winrestcmd()<CR>
 
-" 使用 P 来粘贴最近一次 yank 的文字
-nmap P "0p
+" 使用 gP 来粘贴最近一次 yank 的文字
+nmap gp "0p
+nmap gP "0P
 
 " 快速编译
 map <Leader>m :make<CR>
