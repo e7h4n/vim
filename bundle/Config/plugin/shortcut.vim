@@ -46,9 +46,18 @@ nnoremap <silent><C-L> :nohlsearch<CR><C-L>
 " 当前分屏最大
 nmap  <C-W>
 
-" F7/F8 切换下一条 quickfix
-nmap <F7> :cprev<CR>
-nmap <F8> :cnext<CR>
+" F7/F8 切换下一条 diff / quickfix
+" @see http://vim.wikia.com/wiki/Selecting_changes_in_diff_mode
+if &diff
+    let g:origCursorPos=getpos('.')
+    autocmd WinEnter * :call setpos('.', g:origCursorPos)
+    autocmd WinLeave * :let g:origCursorPos=getpos('.')
+    nmap <F7> [c
+    nmap <F8> ]c
+else
+    map <F7> :cp<cr>
+    map <F8> :cn<cr>
+endif
 
 " 编辑 snippet
 nmap <F9> :call handy#ToggleSnipple()<CR>
