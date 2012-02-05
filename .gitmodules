@@ -70,3 +70,6 @@
 [submodule "bundle/vim-css3-syntax"]
 	path = bundle/vim-css3-syntax
 	url = git://github.com/hail2u/vim-css3-syntax.git
+[submodule "bundle/localvimrc"]
+	path = bundle/localvimrc
+	url = git://github.com/vim-scripts/localvimrc.git
