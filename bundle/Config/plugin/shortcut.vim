@@ -7,6 +7,10 @@ nmap <silent> <Space> :FufBuffer<CR>
 nmap <silent> <C-j> :FufCoverageFile<CR>
 nmap <silent> <F12> :FufMruFile<cr>
 
+" fugitive
+nmap <Leader>gc :Gcommit<cr>
+nmap <Leader>gs :Gstatus<cr>
+
 " 使用上下来调节窗口大小
 nmap <silent> <UP> <C-W>+:let t:flwwinlayout = winrestcmd()<CR>
 nmap <silent> <DOWN> <C-W>-:let t:flwwinlayout = winrestcmd()<CR>
