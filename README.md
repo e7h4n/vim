@@ -57,12 +57,14 @@
     * <code>&lt;F3&gt;</code>: 在当前目录以及子文件夹中搜索特定关键字 (搜索支持 Vim 正则, 默认会搜索 <code>\&lt;关键字&gt;></code>，如果要取消左右的 <code>\&lt;\&gt;</code>，可以输入 <code>/关键字</code>)
     * <code>&lt;F6&gt;</code>: 切换粘贴模式
     * <code>&lt;F5&gt;</code>: 切换显示行号
-    * <code>&lt;F7&gt;</code>/<code>&lt;F8&gt;</code>: 跳到上一条/下一条 quickfix 记录，配合 <code>&lt;F3&gt;</code> 可以在搜索结果中快速跳转
+    * <code>&lt;F7&gt;</code>/<code>&lt;F8&gt;</code>: 跳到上一条/下一条 quickfix 记录，配合 <code>&lt;F3&gt;</code> 可以在搜索结果中快速跳转；在 vimdiff 模式下跳转到下一处/上一处 diff
     * <code>&lt;F9&gt;</code>: 快速编辑 Snippet，在 Snippet 中按 <code>&lt;F9&gt;</code> 会保存当前 Snippet，刷新 snipMate 缓存并返回刚刚编辑的文件
     * <code>&lt;F10&gt;</code>: 打开 TagBar
     * <code>&lt;Ctrl&gt;-l</code>: 清除高亮并且重绘屏幕
     * <code>&lt;Ctrl&gt;-_</code>: 分屏模式下当前窗口最大化
     * <code>t`</code>: 跳转到下一个大写字母 (驼峰式跳转)
+    * <code>&lt;Leader&gt;gc</code>: git commit
+    * <code>&lt;Leader&gt;gs</code>: git status
 * CommandLine 模式
     * <code>&lt;Ctrl&gt;-a</code>: 跳到命令行开始
     * <code>&lt;Ctrl&gt;-e</code>: 跳到命令行结束
@@ -92,7 +94,6 @@
 * nerdtree 查看目录树
     * 设置了过滤 pyc 文件
 * fencview 增强 vim 的编码检测
-* vim-markdown 高亮 markdown 格式
 * snipmate 代码补全
 * jslint js 语法校验
 * tagbar js 代码大纲视图
@@ -102,8 +103,13 @@
 * jsbeautify JavaScript 代码格式化，快捷键是 <code>&lt;Leader&gt;ff</code>
 * Scrath 打开一个临时的缓冲区随便记录东西，快捷键是 <code>&lt;Leader&gt;S</code>
 * genutils 给 vim 添加一些函数库
+* vim-fugitive 增加一些 git 命令支持
+* localvimrc 自动读取任意目录下的 .vimrc
 * molokai 配色
 * desertEx 配色
+* vim-markdown 高亮 markdown 格式
+* vim-lesscss 高亮 lesscss 格式
+* vim-css3 高亮 css3 中的属性
 
 ### 安装新插件
 
