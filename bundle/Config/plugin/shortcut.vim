@@ -5,6 +5,7 @@ nmap <silent> <Leader>nf :NERDTreeFind<CR>
 " FuzzyFinder
 nmap <silent> <Space> :FufBuffer<CR>
 nmap <silent> <C-j> :FufCoverageFile<CR>
+nmap <silent> g<C-t> :FufTag<CR>
 nmap <silent> <F12> :FufMruFile<cr>
 
 " fugitive

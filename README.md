@@ -80,9 +80,10 @@
 插件介绍请 Google
 
 * FuzzyFinder
-    * 强大的文件查找工具 (替换了 Command-T 以及 MRU)，主要快捷键映射有
+    * 强大的文件查找工具，主要快捷键映射有
     * <code>&lt;space&gt;</code> 搜索 Buffer (以前的版本中这个快捷键是 BufExplorer)
-    * <code>&lt;Ctrl&gt;-j</code> 搜索文件 (替换掉了 Command-T)
+    * <code>&lt;Ctrl&gt;-j</code> 搜索文件
+    * <code>g&lt;Ctrl&gt;-t</code> 搜索 Tag
     * <code>&lt;F12&gt;</code> 在最近打开的文件中搜索 (以前版本中这个快捷键是 MRU)
     * <code>&lt;leader&gt;fr</code> 更新 Cache (:FufRenewCache)
 * nerdcommenter 快速给代码加注释
