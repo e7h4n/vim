@@ -1,3 +1,4 @@
 .netrwhist
 bundle/Config/plugin/alias.vim
 ftplugin/javascript/jslint
+dirfile

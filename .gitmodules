@@ -76,3 +76,6 @@
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
+[submodule "bundle/chdirectory"]
+	path = bundle/chdirectory
+	url = git://github.com/perfectworks/chdirectory.git
