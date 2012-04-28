@@ -79,3 +79,6 @@
 [submodule "bundle/chdirectory"]
 	path = bundle/chdirectory
 	url = git://github.com/perfectworks/chdirectory.git
+[submodule "bundle/vitality"]
+	path = bundle/vitality
+	url = git://github.com/sjl/vitality.vim.git
