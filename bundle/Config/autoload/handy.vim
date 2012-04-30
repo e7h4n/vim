@@ -27,3 +27,32 @@ function! handy#ToggleSnipple()
         edit `=expand("~/.vim/bundle/customSnippet/snippets/" . &ft . ".snippets")`
     endif
 endfunction
+
+" 根据 tags 文件设置当前目录
+function! handy#AutoChangePwd()
+    let file = finddir('.git', '.;')
+    if isdirectory(file)
+        execute ":lcd " . fnamemodify(file, ":p:h:h")
+    endif
+endfunction
+
+" 生成 jstags
+function! handy#GenerateTag()
+    let file = fnamemodify(findfile('jstags', '.;'), ':p')
+    if executable(file)
+        execute ':silent !' . file
+    endif
+endfunction
+
+" Remove trailing whitespace when writing a buffer, but not for diff files.
+" From: Vigil
+" @see http://blog.bs2.to/post/EdwardLee/17961
+function! handy#RemoveTrailingWhitespace()
+    if &ft != "diff"
+        let b:curcol = col(".")
+        let b:curline = line(".")
+        silent! %s/\s\+$//
+        silent! %s/\(\s*\n\)\+\%$//
+        call cursor(b:curline, b:curcol)
+    endif
+endfunction
