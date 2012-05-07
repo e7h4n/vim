@@ -105,7 +105,6 @@
 * Scrath 打开一个临时的缓冲区随便记录东西，快捷键是 <code>&lt;Leader&gt;S</code>
 * genutils 给 vim 添加一些函数库
 * vim-fugitive 增加一些 git 命令支持
-* localvimrc 自动读取任意目录下的 .vimrc
 * molokai 配色
 * desertEx 配色
 * vim-markdown 高亮 markdown 格式
