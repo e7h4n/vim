@@ -65,6 +65,7 @@
     * <code>t`</code>: 跳转到下一个大写字母 (驼峰式跳转)
     * <code>&lt;Leader&gt;gc</code>: git commit
     * <code>&lt;Leader&gt;gs</code>: git status
+    * <code>g&lt;C-O&gt;</code><code>g&lt;C-I&gt;</code>: 跳转到当前文件中的上一个/下一个光标位置
 * CommandLine 模式
     * <code>&lt;Ctrl&gt;-a</code>: 跳到命令行开始
     * <code>&lt;Ctrl&gt;-e</code>: 跳到命令行结束
@@ -73,12 +74,19 @@
 * FuzzyFinder
     * 参考插件列表中 FuzzyFinder 的介绍
 
+## 方便 Coding 的一些小功能
+
+* 打开文件时自动跳转到上一次编辑的位置
+* 打开 java/js/html/css 等文件时，会根据 .git 文件所在目录自动设置当前 working directory
+* 保存 js 文件后自动生成 tags 文件（需要在项目目录下写一个 jstags.sh 脚本，脚本中写生成 tags 的命令。Vim 仅仅调用这个脚本而已）
+
 ## 插件
 
 ### 插件列表
 
 插件介绍请 Google
 
+* vitality 在 iterm2 下支持光标样式切换，以及给 tmux 提供一些高级 feature
 * FuzzyFinder
     * 强大的文件查找工具，主要快捷键映射有
     * <code>&lt;space&gt;</code> 搜索 Buffer (以前的版本中这个快捷键是 BufExplorer)
