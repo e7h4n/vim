@@ -90,3 +90,19 @@ nmap t` /[A-Z]<cr>
 
 " 更新 FuzzyFinder 的 cache
 nmap <silent> <leader>fr :FufRenewCache<cr>
+
+" 使用 C-i 来调用 complete
+inoremap <C-j> <C-x><C-u>
+
+" 在 macvim 下通过 cmd+r 来 make 项目
+if has("gui_macvim")
+    nmap <D-r> :silent make<cr>
+endif
+
+" Prevent jump out from current buffer
+nnoremap <silent> g<c-o> :call handy#JumpInFile("\<c-i>", "\<c-o>")<cr>
+nnoremap <silent> g<c-i> :call handy#JumpInFile("\<c-o>", "\<c-i>")<cr>
+
+" 搜索前先标记当前位置，方便回到当前位置上
+nnoremap / ms/
+nnoremap ? ms?
