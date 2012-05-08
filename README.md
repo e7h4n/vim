@@ -66,6 +66,7 @@
     * <code>&lt;Leader&gt;gc</code>: git commit
     * <code>&lt;Leader&gt;gs</code>: git status
     * <code>g&lt;C-O&gt;</code><code>g&lt;C-I&gt;</code>: 跳转到当前文件中的上一个/下一个光标位置
+    * <code>&lt;space&gt;</code>: 打开刚刚编辑的文件
 * CommandLine 模式
     * <code>&lt;Ctrl&gt;-a</code>: 跳到命令行开始
     * <code>&lt;Ctrl&gt;-e</code>: 跳到命令行结束
@@ -92,9 +93,8 @@
 * vitality 在 iterm2 下支持光标样式切换，以及给 tmux 提供一些高级 feature
 * CtrlP
     * 强大的文件查找工具，主要快捷键映射有
-    * <code>&lt;space&gt;</code> 搜索 Buffer/文件/最近使用的文件 (Mixed 模式)
-    * <code>&lt;Ctrl&gt;-p</code> 搜索 Tag
-    * <code>g&lt;Ctrl&gt;-j</code> 搜索 最近打开的文件
+    * <code>&lt;Ctrl&gt;-p</code> 搜索 Buffer/文件/最近使用的文件 (Mixed 模式)
+    * <code>g&lt;Ctrl&gt;-j</code> 搜索 Tag
 * nerdcommenter 快速给代码加注释
 * vim-surround 修改一段代码周围的引号、括号等
 * CmdlineComplete 给命令行提供补全功能
