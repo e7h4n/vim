@@ -68,8 +68,5 @@ endif
 " 保存文件时自动去除 trailing whitespace
 autocmd BufWritePre *.js call handy#RemoveTrailingWhitespace()
 
-" 根据 .git 文件夹设置 working directory
-autocmd BufNewFile,BufRead *.js,*.html,*.css,*.mustache,*.vim,*.xml,*.java,*.sh,*.py call handy#AutoChangePwd()
-
 " 写文件时去去找 jstags.sh 生成 tag
 autocmd BufWritePost *.js call handy#GenerateTag()

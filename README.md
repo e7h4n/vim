@@ -71,13 +71,16 @@
     * <code>&lt;Ctrl&gt;-e</code>: 跳到命令行结束
 * Insert 模式
     * ii: 退出到 Norm 模式并保存文件
-* FuzzyFinder
-    * 参考插件列表中 FuzzyFinder 的介绍
+    * <code>&lt;Ctrl&gt;-j</code>: 相当于 <code>&lt;Ctrl&gt;-x&lt;Ctrl&gt;-u</code>
+    * <code>&lt;Command&gt;-r</code>: 仅在 MacVim 下有效，执行 :silent make
+* CtrlP
+    * 参考插件列表中 CtrlP 的介绍
+* Objective C 文件编辑
+    * <code>&lt;leader&gt;-a</code>: 在 .m 和 .h 文件间切换
 
 ## 方便 Coding 的一些小功能
 
 * 打开文件时自动跳转到上一次编辑的位置
-* 打开 java/js/html/css 等文件时，会根据 .git 文件所在目录自动设置当前 working directory
 * 保存 js 文件后自动生成 tags 文件（需要在项目目录下写一个 jstags.sh 脚本，脚本中写生成 tags 的命令。Vim 仅仅调用这个脚本而已）
 
 ## 插件
@@ -87,13 +90,11 @@
 插件介绍请 Google
 
 * vitality 在 iterm2 下支持光标样式切换，以及给 tmux 提供一些高级 feature
-* FuzzyFinder
+* CtrlP
     * 强大的文件查找工具，主要快捷键映射有
-    * <code>&lt;space&gt;</code> 搜索 Buffer (以前的版本中这个快捷键是 BufExplorer)
-    * <code>&lt;Ctrl&gt;-j</code> 搜索文件
-    * <code>g&lt;Ctrl&gt;-t</code> 搜索 Tag
-    * <code>&lt;F12&gt;</code> 在最近打开的文件中搜索 (以前版本中这个快捷键是 MRU)
-    * <code>&lt;leader&gt;fr</code> 更新 Cache (:FufRenewCache)
+    * <code>&lt;space&gt;</code> 搜索 Buffer/文件/最近使用的文件 (Mixed 模式)
+    * <code>&lt;Ctrl&gt;-p</code> 搜索 Tag
+    * <code>g&lt;Ctrl&gt;-j</code> 搜索 最近打开的文件
 * nerdcommenter 快速给代码加注释
 * vim-surround 修改一段代码周围的引号、括号等
 * CmdlineComplete 给命令行提供补全功能

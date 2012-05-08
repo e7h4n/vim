@@ -2,11 +2,9 @@
 nmap <silent> <Leader>nt :NERDTreeToggle<CR>
 nmap <silent> <Leader>nf :NERDTreeFind<CR>
 
-" FuzzyFinder
-nmap <silent> <Space> :FufBuffer<CR>
-nmap <silent> <C-j> :FufCoverageFile<CR>
-nmap <silent> g<C-t> :FufTag<CR>
-nmap <silent> <F12> :FufMruFile<cr>
+" CtrlP
+nmap <silent> <C-j> :CtrlPMRUFiles<CR>
+nmap <silent> <C-p> :CtrlPTag<cr>
 
 " fugitive
 nmap <Leader>gc :Gcommit<cr>
@@ -87,9 +85,6 @@ nnoremap y^ y0
 
 " 快速跳到下一个驼峰位置
 nmap t` /[A-Z]<cr>
-
-" 更新 FuzzyFinder 的 cache
-nmap <silent> <leader>fr :FufRenewCache<cr>
 
 " 使用 C-i 来调用 complete
 inoremap <C-j> <C-x><C-u>
