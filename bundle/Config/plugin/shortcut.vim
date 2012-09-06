@@ -106,3 +106,11 @@ nnoremap <silent> g<c-i> :call handy#JumpInFile("\<c-o>", "\<c-i>")<cr>
 " 搜索前先标记当前位置，方便回到当前位置上
 nnoremap / ms/
 nnoremap ? ms?
+
+""""""""""""""""""""""""""""""
+" => Visual mode related
+""""""""""""""""""""""""""""""
+" Really useful!
+"  In visual mode when you press * or # to search for the current selection
+vnoremap <silent> * :call handy#VisualSearch('f')<CR>
+vnoremap <silent> # :call handy#VisualSearch('b')<CR>

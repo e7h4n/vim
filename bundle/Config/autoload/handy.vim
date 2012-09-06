@@ -75,3 +75,20 @@ function! handy#JumpInFile(back, forw)
         sil! exe 'norm!1' . a:forw
     endwhile
 endfunction
+
+function! handy#VisualSearch(direction) range
+    let l:saved_reg = @"
+    execute "normal! vgvy"
+
+    let l:pattern = escape(@", '\\/.*$^~[]')
+    let l:pattern = substitute(l:pattern, "\n$", "", "")
+
+    if a:direction == 'b'
+        execute "normal ?" . l:pattern . ""
+    elseif a:direction == 'f'
+        execute "normal /" . l:pattern . ""
+    endif
+
+    let @/ = l:pattern
+    let @" = l:saved_reg
+endfunction
