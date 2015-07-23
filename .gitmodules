@@ -18,7 +18,7 @@
 	url = git://github.com/vim-scripts/bufexplorer.zip.git
 [submodule "bundle/zencoding-vim"]
 	path = bundle/zencoding-vim
-	url = git://github.com/mattn/zencoding-vim.git
+	url = https://github.com/mattn/emmet-vim.git
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
@@ -79,3 +79,6 @@
 [submodule "bundle/webapi-vim"]
 	path = bundle/webapi-vim
 	url = git://github.com/mattn/webapi-vim.git
+[submodule "bundle/tabular"]
+	path = bundle/tabular
+	url = https://github.com/godlygeek/tabular.git
